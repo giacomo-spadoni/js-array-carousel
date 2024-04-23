@@ -8,7 +8,7 @@ main {
 .immagini {
     width: 80%;
     height: 35rem;
-    border: 3px solid green;
+    border: 3px solid rgb(175, 175, 153);
     position: relative;
 }
 
@@ -27,6 +27,8 @@ img {
 }
 
 #bottone-giu {
+    border: 3px solid rgb(175, 175, 153);
+    color: rgb(175, 175, 153);
     border-radius: 50%;
     position: absolute;
     top: 90%;
@@ -34,6 +36,8 @@ img {
 }
 
 #bottone-su {
+    border: 3px solid rgb(175, 175, 153);
+    color: rgb(175, 175, 153);
     border-radius: 50%;
     position: absolute;
     top: 3%;
