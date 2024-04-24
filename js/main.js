@@ -7,7 +7,7 @@ const downButton = document.getElementById('bottone-giu')
 downButton.addEventListener('click', function () {
     // inserisco il ciclo for per controllare le classi di tutte le immagini
     for (let i = 0; i < slides.length; i++) {
-        // creo la condizione per switchare le immagini (tranno l'ultima)
+        // creo la condizione per switchare le immagini (tranne l'ultima)
         if (slides[i].classList.contains('active') && i != slides.length - 1) {
             slides[i].nextElementSibling.classList.add('active')
             slides[i].classList.remove('active')
@@ -24,12 +24,12 @@ downButton.addEventListener('click', function () {
 upButton.addEventListener('click', function () {
     // inserisco il ciclo for per controllare le classi di tutte le immagini
     for (let i = 0; i < slides.length; i++) {
-        // creo la condizione per switchare le immagini (tranno l'ultima)
+        // creo la condizione per switchare le immagini (tranne l'ultima)
         if (slides[i].classList.contains('active') && i != 0) {
             slides[i].previousElementSibling.classList.add('active')
             slides[i].classList.remove('active')
             break
-            // creo la condizione per switchare l'ultima immagine
+            // creo la condizione per switchare la prima immagine
         } else if (slides[i].classList.contains('active') && i == 0) {
             slides[slides.length - 1].classList.add('active')
             slides[i].classList.remove('active')
